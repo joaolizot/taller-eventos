@@ -1,6 +1,5 @@
 let div = document.getElementById('div1');
 
-
 div.addEventListener('click', function() {
    
     alert('Hola! Soy el div');
@@ -8,6 +7,7 @@ div.addEventListener('click', function() {
 });
 
 
-function mostrarAlerta(){
+function mostrarAlerta(evento){
+    evento.stopPropagation();
     alert('hola');
     };
